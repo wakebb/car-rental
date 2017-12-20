@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h1>List of all cars</h1>
+    </div>
+    <div class="panel-body">
+      <table class ="table table-bordered table-striped">
+        <tr>
+          <th>Register Number</th>
+          <th>Model</th>
+          <th>Capacity</th>
+          <th>Rate</th>
+          <th>Location</th>
+          <th>status</th>
+          <th>Added at</th>
+          <th>Modified at</th>
+          <th>Action</th>
+        </tr>
+        <% @cars.each do |car| %>
+        <tr>
+          <td><%= car.regnumber %></td>
+          <td><%= car.model %></td>
+          <td><%= car.capacity %></td>
+          <td><%= car.curr_rate %></td>
+          <td><%= car.pickup_address %></td>
+          <td><%= car.status %></td>
+          <td><%= car.created_at %></td>
+          <td><%= car.updated_at %></td>
+          <td><%= link_to 'Delete', car_path(car),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+    </table>
+
+    </div>
+  </div>
+</div>

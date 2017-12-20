@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1>User Approvals</h1>
+  </div>
+  <div class="panel-body">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Status</th>
+          <th>Comments</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @approvals_extra.each do |approval_extra| %>
+          <tr>
+            <td><%= approval_extra.User_id %></td>
+            <td><%= approval_extra.status %></td>
+            <td><%= approval_extra.comment %></td>
+            <td><%= link_to (raw("<span class='glyphicon glyphicon-edit'></span>")), approval_path(approval_extra) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+  </table>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  regnumber: MyString
+  model: MyString
+  capacity: 1
+  start_mileage: 1
+  status: 1
+  curr_rate: 1.5
+  pickup_address: MyString
+
+two:
+  regnumber: MyString
+  model: MyString
+  capacity: 1
+  start_mileage: 1
+  status: 1
+  curr_rate: 1.5
+  pickup_address: MyString

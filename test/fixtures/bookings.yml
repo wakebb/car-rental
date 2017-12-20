@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  license: MyString
+  booking_time: 2017-04-17 13:25:11
+  start_slot: 2017-04-17 13:25:11
+  end_slot: 2017-04-17 13:25:11
+  start_time: 2017-04-17 13:25:11
+  end_time: 2017-04-17 13:25:11
+  total_miles: 1.5
+  booking_rate: 1.5
+  User: one
+  Car: one
+
+two:
+  license: MyString
+  booking_time: 2017-04-17 13:25:11
+  start_slot: 2017-04-17 13:25:11
+  end_slot: 2017-04-17 13:25:11
+  start_time: 2017-04-17 13:25:11
+  end_time: 2017-04-17 13:25:11
+  total_miles: 1.5
+  booking_rate: 1.5
+  User: two
+  Car: two

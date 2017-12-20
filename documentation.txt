@@ -1,0 +1,28 @@
+steps done:
+1.	created git repository.
+		repo name: carrental
+		repo url: git@github.com:sahayapoorva/carrental.git
+		- rails new carrental
+		- git add *
+		- git commit -m "message"
+		- git push origin master
+
+	Note: Never push the bundle files. It is specific to the system.
+
+2.	Model creation:
+	User:
+		Command : rails generate model User username:string password:string email:string license:string cardinfo:string user_type:integer name:string address:string
+	Car:
+		Command: rails generate model Car regnumber:string model:string capacity:string start_mileage:integer status:integer curr_rate:float pickup_address:string
+	Booking:
+		Command:  rails generate model Booking license:string booking_time:timestamp start_slot:datetime end_slot:datetime start_time:datetime end_time:datetime total_miles:float booking_rate:float User:references Car:references
+	Approval:
+		Command: rails generate model Approval status:integer comment:text User:references
+
+
+#changes made:
+	- added a new field to car that is pickup address.
+
+
+Important link:
+SQLite db browser http://sqlitebrowser.org/
