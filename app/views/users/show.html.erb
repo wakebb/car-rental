@@ -1,0 +1,12 @@
+<%= link_to 'Signout', signout_path %>
+
+<h1>Welcome, <%= @user.name %></h1>
+<% if @user.user_type == "admin" %>
+  <h3>Actions</h3>
+  <ul>
+    <li><%= link_to 'User Actions', approvals_path %></li>
+    <li><%= link_to 'Car Actions', signout_path %></li>
+  </ul>
+<% else %>
+  <p>General User</p>
+<% end %>
